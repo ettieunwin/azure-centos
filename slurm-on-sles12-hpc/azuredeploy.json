@@ -273,7 +273,7 @@
                   "ssh": {
                       "publicKeys": [
                           {
-                              "path": "/home/hjtu2/.ssh/authorized_keys",
+                              "path": "/home/hjtu2/.ssh/id_rsa.pub",
                               "keyData": "[parameters('adminSSHKey')]"
                           }
                       ]
@@ -570,7 +570,7 @@
                   "ssh": {
                       "publicKeys": [
                           {
-                              "path": "/home/hjtu2/.ssh/authorized_keys",
+                              "path": "/home/hjtu2/.ssh/id_rsa.pub",
                               "keyData": "[parameters('adminSSHKey')]"
                           }
                       ]
