@@ -158,7 +158,7 @@
     },
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('networkSettings').virtualNetworkName)]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('networkSettings').subnet.dse.name)]",
-    "templateBaseUrl": "https://raw.githubusercontent.com/juhaj/azure-hpc/master/slurm-on-sles12-hpc/",
+    "templateBaseUrl": "https://raw.githubusercontent.com/ettieunwin/azure-centos/master/slurm-on-centos73-hpc/",
     "installationCLI": "[concat('bash azuredeploy.sh ', variables('masterVMName'), ' ', variables('workerVMName'), ' ', parameters('workerNodeCount'), ' ', parameters('hpcUserName'), ' ', variables('templateBaseUrl'))]",
     "storageAccountType": "Standard_LRS"
   },
@@ -254,7 +254,7 @@
                   "ssh": {
                       "publicKeys": [
                           {
-                              "path": "/home/juhaj/.ssh/authorized_keys",
+                              "path": "/home/hjtu2/.ssh/authorized_keys",
                               "keyData": "[parameters('adminSSHKey')]"
                           }
                       ]
@@ -265,7 +265,7 @@
           "imageReference": {
             "publisher": "[variables('imagePublisher')]",
             "offer": "[variables('imageOffer')]",
-            "sku": "[variables('slesOSVersion')]",
+            "sku": "[variables('centOSVersion')]",
             "version": "latest"
           },
           "osDisk": {
@@ -548,7 +548,7 @@
           "imageReference": {
             "publisher": "[variables('imagePublisher')]",
             "offer": "[variables('imageOffer')]",
-            "sku": "[variables('slesOSVersion')]",
+            "sku": "[variables('centOSVersion')]",
             "version": "latest"
           },
           "osDisk": {
