@@ -1,11 +1,11 @@
-# Azure Centos 7.3 HPC ARM Template
+# Azure SLES 12 HPC ARM Template
 
-Deploys a SLURM cluster with head node and n worker nodes. Based on template here: https://github.com/juhaj/azure-hpc.
+Deploys a SLURM cluster with head node and n worker nodes.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fettieunwin%2Fazure-centos%2Fmaster%2Fslurm-on-centos73-hpc%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fettieunwin%2Fazure-centos%2Fmaster%2Fslurm-on-sles12-hpc%2Fazuredeploy.json" target="_blank">
    <img alt="Deploy to Azure" src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fettieunwin%2Fazure-centos%2Fmaster%2Fslurm-on-centos73-hpc%2Fazuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fettieunwin%2Fazure-centos%2Fmaster%2Fslurm-on-sles12-hpc%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -33,7 +33,7 @@ You can log into the head node using the admin user and password specified.  Onc
 
 ### HPC User
 
-After SSHing to the head node you can switch to the HPC user specified on creation, the default username is 'hpc'.
+After SSHing to the head node you can switch to the HPC user specified on creation, the default username is 'hpc'.  
 
 This is a special user that should be used to run work and/or SLURM jobs.  The HPC user has public key authentication configured across the cluster and can login to any node without a password.  The HPC users home directory is a NFS share on the master and shared by all nodes.
 
