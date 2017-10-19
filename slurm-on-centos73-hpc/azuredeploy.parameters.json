@@ -6,9 +6,12 @@
       "value": ""
     },
     "adminUsername": {
-      "value": ""
+      "value": "azureuser"
     },
     "adminPassword": {
+      "value": ""
+    },
+    "adminSSHKey": {
       "value": ""
     },
     "hpcUserName": {
